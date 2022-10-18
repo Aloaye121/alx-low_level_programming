@@ -1,59 +1,31 @@
 #include "main.h"
-
 /**
- * jack_bauer - prints every minute of the day
- *
- * Description: prints every minute of the day
- *
- * Return: void
- */
-
+* jack_bauer-prints all minutes in a day from 00:00
+*
+* Return:0 if succeesful.
+*/
 void jack_bauer(void)
 {
-	int hoursTens, hoursOones, minutesTens, minutesOnes, hoursMax;
-
-	hoursMax = 58;
-	hoursTens = '0';
-	while (hoursTens < '3')
-	{
-		if (hoursTens == '2')
-		{
-			hoursMax = '4';
-		}
-		hoursOnes = '0';
-		while (hoursOnes < hoursMax)
-		{
-			minutesTens = '0';
-			while (minutesTens < '6')
-			{
-				minutesOnes = '0';
-				while (minutesOnes < 58)
-				{
-					_putchar(hourTens);
-					_putchar(hoursOnes);
-					_putchar(':');
-					_putchar(minutesTens);
-					_putchar(minutesOnes);
-					_putchar('\n');
-					minutesOnes++;
-				}
-<<<<<<< HEAD
-				minutesOnes = 0;
-				minutesTens++;
-			}
-			minutesTens = 0;
-			hoursOnes++;
-		}
-		hoursOnes = 0;
-=======
-				minutesOnes = '0';
-				minutesTens++;
-			}
-			minutesTens = '0';
-			hoursOnes++;
-		}
-		hoursOnes = '0';
->>>>>>> 78ae4603b1d34573152024ee7f86caf18b321c55
-		hoursTens++;
-	}
+int i, j, k, m;
+for (i = 0; i <= 2; i++)
+{
+for (j = 0; j <= 9; j++)
+{
+for (k = 0; k <= 5; k++)
+{
+for (m = 0; m <= 9; m++)
+{
+if (i == 2 && j > 3)
+{break;
+}
+_putchar(i + '0');
+_putchar(j + '0');
+_putchar(':');
+_putchar(k + '0');
+_putchar(m + '0');
+_putchar('\n');
+}
+}
+}
+}
 }
